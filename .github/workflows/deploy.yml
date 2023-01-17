@@ -39,6 +39,7 @@ jobs:
             DOCS_LAMBDA_FUNCTION_REDIRECTS="DockerDocsRedirectFunction-prod"
             DOCS_SLACK_MSG="Successfully deployed docs from published branch. $DOCS_URL"
           elif [ "${{ github.ref }}" = "refs/heads/lab" ]; then
+            HUGO_ENVIRONMENT="labs"
             DOCS_URL="https://docs-labs.docker.com"
             DOCS_AWS_IAM_ROLE="arn:aws:iam::710015040892:role/labs-docs-docs.docker.com-20220818202218402500000001"
             DOCS_S3_BUCKET="labs-docs-docs.docker.com"
@@ -54,6 +55,7 @@ jobs:
             SEND_SLACK_MSG="false"
           fi
           echo "BRANCH_NAME=${GITHUB_REF#refs/heads/}" >> $GITHUB_ENV
+          echo "HUGO_ENVIRONMENT=$HUGO_ENVIRONMENT" >> $GITHUB_ENV
           echo "DOCS_URL=$DOCS_URL" >> $GITHUB_ENV
           echo "DOCS_AWS_REGION=$DOCS_AWS_REGION" >> $GITHUB_ENV
           echo "DOCS_AWS_IAM_ROLE=$DOCS_AWS_IAM_ROLE" >> $GITHUB_ENV

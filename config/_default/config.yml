@@ -1,5 +1,5 @@
 title: Docker Docs
-baseURL: https://hugodocker.netlify.app/
+baseURL: https://docs.docker.com/
 refLinksErrorLevel: WARNING
 enableGitInfo: true
 tableOfContents:
