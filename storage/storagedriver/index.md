@@ -62,7 +62,7 @@ _adding_, and _removing_ files will result in a new layer. In the example above,
 the `$HOME/.cache` directory is removed, but will still be available in the
 previous layer and add up to the image's total size. Refer to the
 [Best practices for writing Dockerfiles](../../develop/develop-images/dockerfile_best-practices.md)
-and [use multi-stage builds](../../develop/develop-images/multistage-build.md)
+and [use multi-stage builds](../../build/building/multi-stage.md)
 sections to learn how to optimize your Dockerfiles for efficient images.
 
 The layers are stacked on top of each other. When you create a new container,
@@ -90,7 +90,7 @@ stored in this container layer, multiple containers can share access to the same
 underlying image and yet have their own data state. The diagram below shows
 multiple containers sharing the same Ubuntu 15.04 image.
 
-![Containers sharing same image](images/sharing-layers.jpg)
+![Containers sharing the same image](images/sharing-layers.jpg)
 
 Docker uses storage drivers to manage the contents of the image layers and the
 writable container layer. Each storage driver handles the implementation
@@ -328,7 +328,7 @@ layers are the same.
     > image for each step for caching purposes, and the `IMAGE` column would show
     > the ID of that image.
     > BuildKit uses its own caching mechanism, and no longer requires intermediate
-    > images for caching. Refer to [build images with BuildKit](../../develop/develop-images/build_enhancements.md)
+    > images for caching. Refer to [BuildKit](../../build/buildkit/index.md)
     > to learn more about other enhancements made in BuildKit.
 
 

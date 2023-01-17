@@ -69,7 +69,7 @@ business needs dictate, in near real time.
 **Running more workloads on the same hardware**
 
 Docker is lightweight and fast. It provides a viable, cost-effective alternative
-to hypervisor-based virtual machines, so you can use more of your compute
+to hypervisor-based virtual machines, so you can use more of your server
 capacity to achieve your business goals. Docker is perfect for high density
 environments and for small and medium deployments where you need to do more with
 fewer resources.
@@ -84,7 +84,7 @@ daemon. The Docker client and daemon communicate using a REST API, over UNIX
 sockets or a network interface. Another Docker client is Docker Compose,
 that lets you work with applications consisting of a set of containers.
 
-![Docker Architecture Diagram](/engine/images/architecture.svg)
+![Docker Architecture diagram](/engine/images/architecture.svg)
 
 ### The Docker daemon
 

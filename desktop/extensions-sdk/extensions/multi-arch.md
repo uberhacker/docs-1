@@ -13,25 +13,52 @@ Docker Desktop retrieves the extension image according to the user’s system ar
 
 ### Build and push for multiple architectures
 
-If you created an extension from the `docker extension init` command, the  `Makefile` at the root of the directory includes a target with name `push-extension`.
+If you created an extension from the `docker extension init` command, the
+`Makefile` at the root of the directory includes a target with name
+`push-extension`.
 
-You can do `make push-extension` to build your extension against both `linux/amd64` and `linux/arm64` platforms, and push them to DockerHub. For example:
+You can do `make push-extension` to build your extension against both
+`linux/amd64` and `linux/arm64` platforms, and push them to DockerHub.
 
-`docker buildx build --platform=linux/amd64,linux/arm64 -t <name-of-your-extension> .`
+For example:
 
-Alternatively, if you started from an empty directory, use the command below to build your extension for multiple architectures:
-
-```
-docker buildx build \
-    --push \
-    --platform=linux/amd64,linux/arm64 \
-    --tag=my-extension:0.0.1 .
-
+```console
+$ make push-extension
 ```
 
-The information above serves as a guide to help you get started. It’s up to you to define the CI/CD process to build and push the extension.
+Alternatively, if you started from an empty directory, use the command below
+to build your extension for multiple architectures:
 
-![hub-multi-arch-extension](images/hub-multi-arch-extension.png)
+```console
+$ docker buildx build --push --platform=linux/amd64,linux/arm64 --tag=username/my-extension:0.0.1 .
+```
+
+You can then check the image manifest to see if the image is available for both
+architectures using the [`docker buildx imagetools` command](../../../engine/reference/commandline/buildx_imagetools.md):
+
+```console
+$ docker buildx imagetools inspect username/my-extension:0.0.1
+Name:      docker.io/username/my-extension:0.0.1
+MediaType: application/vnd.docker.distribution.manifest.list.v2+json
+Digest:    sha256:f3b552e65508d9203b46db507bb121f1b644e53a22f851185d8e53d873417c48
+
+Manifests:
+  Name:      docker.io/username/my-extension:0.0.1@sha256:71d7ecf3cd12d9a99e73ef448bf63ae12751fe3a436a007cb0969f0dc4184c8c
+  MediaType: application/vnd.docker.distribution.manifest.v2+json
+  Platform:  linux/amd64
+
+  Name:      docker.io/username/my-extension:0.0.1@sha256:5ba4ceea65579fdd1181dfa103cc437d8e19d87239683cf5040e633211387ccf
+  MediaType: application/vnd.docker.distribution.manifest.v2+json
+  Platform:  linux/arm64
+```
+
+> Having trouble pushing the image?
+>
+> Ensure you are logged into DockerHub. Otherwise, run `docker login` to authenticate.
+
+> **Note**
+>
+> For more information, see [Multi-platform images](../../../build/building/multi-platform.md) page.
 
 ### Adding multi-arch binaries
 
@@ -44,7 +71,6 @@ The example below shows an extension that uses a binary as part of its operation
 In the `Dockerfile`, we download the binary depending on the target architecture:
 
 ```Dockerfile
-
 #syntax=docker/dockerfile:1.3-labs
 
 FROM alpine AS dl
@@ -67,7 +93,7 @@ FROM alpine
 LABEL org.opencontainers.image.title="example-extension" \
     org.opencontainers.image.description="My Example Extension" \
     org.opencontainers.image.vendor="Docker Inc." \
-    com.docker.desktop.extension.api.version=">= 0.1.0"
+    com.docker.desktop.extension.api.version=">= 0.3.3"
 
 COPY --from=dl /out /
 ```
@@ -108,7 +134,7 @@ As a result, when `TARGETARCH` equals:
 - `arm64`, the `kubectl` binary fetched corresponds to the `arm64` architecture, and is copied to `/darwin/kubectl` in the final stage.
 - `amd64`, two `kubectl` binaries are fetched. One for Darwin and another for Windows. They are copied to `/darwin/kubectl` and `/windows/kubectl.exe` respectively, in the final stage.
 
-> Note 
+> Note
 >
 > The binary destination path for darwin is darwin/kubectl in both cases. The only change is the architecture-specific binary that is downloaded.
 
@@ -119,4 +145,3 @@ When the extension is installed, the extension framework copies the binaries fro
 ### Can I develop extensions that run Windows containers?
 
 Although Docker Extensions is supported on Docker Desktop for Windows, Mac, and Linux, the extension framework only supports linux containers. Therefore, you must target `linux` as the OS when you build your extension image.
- 

@@ -271,7 +271,7 @@ An entry with the ip address and hostname is created in `/etc/hosts` inside cont
 Specify a build’s container isolation technology. On Linux, the only supported value
 is `default`. On Windows, acceptable values are `default`, `process` and
 `hyperv`. Refer to the
-[Docker Engine docs](../../engine/reference/commandline/run.md#specify-isolation-technology-for-container---isolation)
+[Docker Engine docs](../../engine/reference/commandline/run.md#isolation)
 for details.
 
 If unspecified, Compose will use the `isolation` value found in the service's definition
@@ -357,7 +357,7 @@ build:
 > Added in [version 2.3](compose-versioning.md#version-23) file format
 
 Build the specified stage as defined inside the `Dockerfile`. See the
-[multi-stage build docs](../../develop/develop-images/multistage-build.md) for
+[multi-stage build docs](../../build/building/multi-stage.md) for
 details.
 
 ```yaml
@@ -898,7 +898,7 @@ services:
 Specify a container’s isolation technology. On Linux, the only supported value
 is `default`. On Windows, acceptable values are `default`, `process` and
 `hyperv`. Refer to the
-[Docker Engine docs](../../engine/reference/commandline/run.md#specify-isolation-technology-for-container---isolation)
+[Docker Engine docs](../../engine/reference/commandline/run.md#isolation)
 for details.
 
 ### labels
@@ -942,7 +942,7 @@ the alias, or the service name if no alias was specified.
 
 Links are not required to enable services to communicate - by default,
 any service can reach any other service at that service’s name. (See also, the
-[Links topic in Networking in Compose](../networking.md#links).)
+[Links topic in Networking in Compose](../networking.md#link-containers).)
 
 Links also express dependency between services in the same way as
 [depends_on](#depends_on), so they determine the order of service startup.

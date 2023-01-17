@@ -128,23 +128,25 @@ Open the `petclinic` in your IDE or a text editor and create a new file named `d
 ```yaml
 version: '3.8'
 services:
- petclinic:
-   build:
-     context: .
-     target: development
-   ports:
-     - 8000:8000
-     - 8080:8080
-   environment:
-     - SERVER_PORT=8080
-     - MYSQL_URL=jdbc:mysql://mysqlserver/petclinic
-   volumes:
-     - ./:/app
+  petclinic:
+    build:
+      context: .
+      target: development
+    ports:
+      - "8000:8000"
+      - "8080:8080"
+    environment:
+      - SERVER_PORT=8080
+      - MYSQL_URL=jdbc:mysql://mysqlserver/petclinic
+    volumes:
+      - ./:/app
+    depends_on:
+      - mysqlserver
 
- mysqlserver:
+  mysqlserver:
     image: mysql:8.0
     ports:
-      - 3306:3306
+      - "3306:3306"
     environment:
       - MYSQL_ROOT_PASSWORD=
       - MYSQL_ALLOW_EMPTY_PASSWORD=true
@@ -155,8 +157,8 @@ services:
       - mysql_data:/var/lib/mysql
       - mysql_config:/etc/mysql/conf.d
 volumes:
-    mysql_data:
-    mysql_config:
+  mysql_data:
+  mysql_config:
 ```
 
 This Compose file is super convenient as we do not have to type all the parameters to pass to the `docker run` command. We can declaratively do that using a Compose file.
@@ -227,4 +229,4 @@ In the next module, we’ll take a look at how to run unit tests in Docker. See
 
 ## Feedback
 
-Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs](https://github.com/docker/docker.github.io/issues/new?title=[Java%20docs%20feedback]){:target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR](https://github.com/docker/docker.github.io/pulls){:target="_blank" rel="noopener" class="_"} to suggest updates.
+Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({{ site.repo }}/issues/new?title=[Java%20docs%20feedback]){:target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({{ site.repo }}/pulls){:target="_blank" rel="noopener" class="_"} to suggest updates.
