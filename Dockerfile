@@ -12,10 +12,11 @@ FROM base as hugo
 RUN go install github.com/gohugoio/hugo@v0.109.0
 
 FROM base as build
+ARG HUGO_ENV
 COPY --from=hugo /go/bin/hugo /usr/local/bin/hugo
 COPY --from=node /src/node_modules /src/node_modules
 COPY . .
-RUN hugo --gc --minify -d /out -e "$HUGO_ENVIRONMENT"
+RUN hugo --gc --minify -d /out -e "$HUGO_ENV"
 
 FROM scratch as release
 COPY --from=build /out /

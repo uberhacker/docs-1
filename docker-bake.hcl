@@ -1,3 +1,7 @@
+variable "HUGO_ENV" {
+  default = "development"
+}
+
 variable "DOCS_SITE_DIR" {
   default = "public"
 }
@@ -10,6 +14,9 @@ group "default" {
 }
 
 target "release" {
+  args = {
+    HUGO_ENV = HUGO_ENV
+  }
   target = "release"
   output = [DOCS_SITE_DIR]
 }
