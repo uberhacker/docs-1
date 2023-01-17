@@ -15,7 +15,7 @@ FROM base as build
 COPY --from=hugo /go/bin/hugo /usr/local/bin/hugo
 COPY --from=node /src/node_modules /src/node_modules
 COPY . .
-RUN hugo --gc --minify -d /out
+RUN hugo --gc --minify -d /out -e "$HUGO_ENVIRONMENT"
 
 FROM scratch as release
 COPY --from=build /out /

@@ -13,3 +13,4 @@ _kbase/**
 node_modules
 .hugo_build.lock
 resources
+public
