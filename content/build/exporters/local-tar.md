@@ -2,7 +2,7 @@
 title: "Local and tar exporters"
 keywords: >
   build, buildx, buildkit, exporter, local, tar
-aliases:
+redirect_from:
   - /build/building/exporters/local-tar/
 ---
 

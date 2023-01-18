@@ -2,7 +2,7 @@
 title: Multi-stage builds
 description: Keeping your images small with multi-stage builds
 keywords: build, best practices
-aliases:
+redirect_from:
 - /engine/userguide/eng-image/multistage-build/
 - /develop/develop-images/multistage-build/
 ---

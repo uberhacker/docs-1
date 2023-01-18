@@ -2,7 +2,7 @@
 description: Play in a trust sandbox
 keywords: trust, security, root,  keys, repository, sandbox
 title: Play in a content trust sandbox
-aliases:
+redirect_from:
 - /security/trust/trust_sandbox/
 ---
 

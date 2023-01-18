@@ -3,7 +3,7 @@ title: Docker Desktop Enterprise
 description: Docker Desktop Enterprise
 keywords: Docker Desktop Enterprise
 sitemap: false
-aliases:
+redirect_from:
 - /ee/desktop/
 - /desktop/enterprise/release-notes/
 - /desktop/enterprise/admin/install/mac/

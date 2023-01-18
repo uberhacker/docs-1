@@ -1,7 +1,7 @@
 ---
 description: Instructions for installing Docker Engine on Fedora
 keywords: requirements, apt, installation, fedora, rpm, install, uninstall, upgrade, update
-aliases:
+redirect_from:
 - /engine/installation/fedora/
 - /engine/installation/linux/fedora/
 - /engine/installation/linux/docker-ce/fedora/

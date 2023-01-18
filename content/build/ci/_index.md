@@ -1,7 +1,7 @@
 ---
 description: Overview of using Docker for continuous integration
 keywords: ci, build
-aliases:
+redirect_from:
   - /ci-cd/best-practices/
 title: Continuous integration with Docker
 ---

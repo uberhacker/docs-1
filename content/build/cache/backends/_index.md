@@ -1,7 +1,7 @@
 ---
 title: "Cache storage backends"
 keywords: build, buildx, cache, backend, gha, azblob, s3, registry, local
-aliases:
+redirect_from:
   - /build/building/cache/backends/
 ---
 

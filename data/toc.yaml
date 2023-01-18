@@ -1,25 +1,4 @@
 
-horizontalnav:
-- title: Home
-  path: /
-  node: home
-- title: Guides
-  path: /get-started/overview/
-  node: guides
-- title: Manuals
-  path: /desktop/
-  node: manuals
-- title: Reference
-  path: /reference/
-  node: reference
-- title: Samples
-  path: /samples/
-  node: samples
-- title: Contribute
-  path: /contribute/overview/
-  node: contribute
-  hide_home: true
-
 home: {}
 
 guides:
@@ -1838,11 +1817,8 @@ manuals:
     title: Domain audit
   - path: /docker-hub/image-access-management/
     title: Image Access Management
-
-
-- title: Security announcements
-  path: /security/
-
+  - title: Security announcements
+    path: /security/
 - sectiontitle: Atomist
   section:
     - path: /atomist/
@@ -1863,7 +1839,6 @@ manuals:
           title: GitHub
         - path: /atomist/integrate/deploys/
           title: Track deployments
-
 - sectiontitle: Open-source projects
   section:
   - sectiontitle: Docker Registry
@@ -1900,13 +1875,13 @@ manuals:
       title: Compatibility
     - path: /registry/help/
       title: Getting help
-
 - path: /release-notes/
   title: Release notes
 - path: /support/
   title: Get support
 - path: /release-lifecycle/
   title: Product release lifecycle
+
 contribute:
   - path: /contribute/overview/
     title: Contribute to Docker's docs

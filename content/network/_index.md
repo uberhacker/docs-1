@@ -2,7 +2,7 @@
 title: Networking overview
 description: Overview of Docker networks and networking concepts
 keywords: networking, bridge, routing, routing mesh, overlay, ports
-aliases:
+redirect_from:
 - /engine/userguide/networking/
 - /engine/userguide/networking/dockernetworks/
 - /articles/networking/

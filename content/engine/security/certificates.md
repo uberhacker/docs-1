@@ -1,7 +1,7 @@
 ---
 description: How to set up and use certificates with a registry to verify access
 keywords: Usage, registry, repository, client, root, certificate, docker, apache, ssl, tls, documentation, examples, articles, tutorials
-aliases:
+redirect_from:
 - /articles/certificates/
 - /engine/articles/certificates/
 title: Verify repository client with certificates

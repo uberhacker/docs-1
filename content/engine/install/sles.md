@@ -1,7 +1,7 @@
 ---
 description: Instructions for installing Docker Engine on SLES
 keywords: requirements, apt, installation, centos, rpm, sles, install, uninstall, upgrade, update, s390x, ibm-z
-aliases:
+redirect_from:
 - /ee/docker-ee/sles/
 - /ee/docker-ee/suse/
 - /engine/installation/linux/docker-ce/sles/

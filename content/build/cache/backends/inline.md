@@ -1,7 +1,7 @@
 ---
 title: "Inline cache"
 keywords: build, buildx, cache, backend, inline
-aliases:
+redirect_from:
   - /build/building/cache/backends/inline/
 ---
 

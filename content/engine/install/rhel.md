@@ -1,7 +1,7 @@
 ---
 description: Instructions for installing Docker Engine on RHEL
 keywords: requirements, apt, installation, rhel, rpm, install, uninstall, upgrade, update, s390x, ibm-z
-aliases:
+redirect_from:
 - /ee/docker-ee/rhel/
 - /engine/installation/linux/docker-ce/rhel/
 - /engine/installation/linux/docker-ee/rhel/

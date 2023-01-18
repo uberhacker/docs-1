@@ -1,7 +1,7 @@
 ---
 title: "Docker container driver"
 keywords: build, buildx, driver, builder, docker-container
-aliases:
+redirect_from:
   - /build/buildx/drivers/docker-container/
   - /build/building/drivers/docker-container/
 ---

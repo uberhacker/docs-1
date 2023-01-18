@@ -1,7 +1,7 @@
 ---
 description: Install Docker Engine on CentOS
 keywords: requirements, apt, installation, centos, rpm, install, uninstall, upgrade, update
-aliases:
+redirect_from:
 - /ee/docker-ee/centos/
 - /engine/installation/centos/
 - /engine/installation/linux/centos/

@@ -2,7 +2,7 @@
 description: Delegations for content trust
 keywords: trust, security, delegations, keys, repository
 title: Delegations for content trust
-aliases:
+redirect_from:
 - /ee/dtr/user/access-dtr/configure-your-notary-client/
 ---
 

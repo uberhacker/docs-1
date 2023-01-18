@@ -1,7 +1,7 @@
 ---
 title: "Building from Compose file"
 keywords: build, buildx, bake, buildkit, compose
-aliases:
+redirect_from:
 - /build/customize/bake/compose-file/
 ---
 

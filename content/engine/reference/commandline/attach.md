@@ -2,6 +2,7 @@
 datafolder: engine-cli
 datafile: docker_attach
 title: docker attach
+layout: cli
 aliases:
   - /edge/engine/reference/commandline/attach/
 ---
@@ -13,4 +14,3 @@ in the source repository on GitHub:
 https://github.com/docker/cli
 -->
 
-{% include cli.md datafolder=page.datafolder datafile=page.datafile %}

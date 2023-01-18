@@ -1,7 +1,7 @@
 ---
 title: High-level builds with Bake
 keywords: build, buildx, bake, buildkit, hcl, json, compose
-aliases:
+redirect_from:
 - /build/customize/bake/
 ---
 

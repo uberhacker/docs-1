@@ -2,7 +2,7 @@
 title: Use macvlan networks
 description: All about using macvlan to make your containers appear like physical machines on the network
 keywords: network, macvlan, standalone
-aliases:
+redirect_from:
 - /engine/userguide/networking/get-started-macvlan/
 - /config/containers/macvlan/
 ---

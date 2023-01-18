@@ -2,7 +2,7 @@
 description: Permission requirements for Docker Desktop for Windows
 keywords: Docker Desktop, Windows, security, install
 title: Understand permission requirements for Windows
-aliases:
+redirect_from:
 - /desktop/windows/privileged-helper/
 ---
 

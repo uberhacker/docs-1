@@ -2,7 +2,7 @@
 description: How to install Docker Desktop on Linux
 keywords: linux, desktop, docker desktop, docker desktop for linux, dd4l, install, system requirements
 title: Install on Linux
-aliases:
+redirect_from:
 - /desktop/linux/install/
 ---
 > **Docker Desktop terms**

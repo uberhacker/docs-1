@@ -2,7 +2,7 @@
 description: Troubleshooting, logs, and known issues
 keywords: Linux, Mac, Windows, troubleshooting, logs, issues, Docker Desktop
 title: Overview
-aliases:
+redirect_from:
 - /desktop/linux/troubleshoot/
 - /desktop/mac/troubleshoot/
 - /desktop/windows/troubleshoot/

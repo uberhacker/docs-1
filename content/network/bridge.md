@@ -2,7 +2,7 @@
 title: Use bridge networks
 description: All about using user-defined bridge networks and the default bridge
 keywords: network, bridge, user-defined, standalone
-aliases:
+redirect_from:
 - /engine/userguide/networking/default_network/custom-docker0/
 - /engine/userguide/networking/default_network/dockerlinks/
 - /engine/userguide/networking/default_network/build-bridges/

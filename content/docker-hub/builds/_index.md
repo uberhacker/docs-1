@@ -1,7 +1,7 @@
 ---
 description: Set up automated builds
 keywords: automated, build, images, Docker Hub
-aliases:
+redirect_from:
 - /docker-hub/builds/automated-build/
 - /docker-cloud/feature-reference/automated-build/
 - /docker-cloud/builds/automated-build/

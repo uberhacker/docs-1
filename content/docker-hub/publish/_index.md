@@ -1,7 +1,7 @@
 ---
 description: Docker Verified Publisher Program
 title: Docker Verified Publisher Program
-aliases:
+redirect_from:
   - /docker-store/byol/
   - /docker-store/certify-images/
   - /docker-store/certify-plugins-logging/

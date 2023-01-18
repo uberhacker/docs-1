@@ -3,7 +3,7 @@ title: Introduction to GitHub Actions
 description: >
   Docker maintains a set of official GitHub Actions for building Docker images.
 keywords: ci, github actions, gha,  build, introduction, tutorial
-aliases:
+redirect_from:
   - /ci-cd/github-actions/
 ---
 

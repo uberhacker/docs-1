@@ -2,7 +2,7 @@
 description: Dev Environments
 keywords: Dev Environments, share, Docker Desktop, Compose, launch
 title: Launch a dev environment
-aliases: 
+redirect_from: 
 - /desktop/dev-environments/create-compose-dev-env/
 ---
 

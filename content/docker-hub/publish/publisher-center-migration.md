@@ -2,7 +2,7 @@
 description: Migrate content from the Publisher Center to Docker Hub
 keywords: publish, store, publisher center, verified image,
 title: Migrate content from the Publisher Center to Docker Hub
-aliases:
+redirect_from:
 - /docker-hub/publish/store-migration/
 ---
 

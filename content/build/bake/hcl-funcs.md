@@ -1,7 +1,7 @@
 ---
 title: "User defined HCL functions"
 keywords: build, buildx, bake, buildkit, hcl
-aliases:
+redirect_from:
 - /build/customize/bake/hcl-funcs/
 ---
 

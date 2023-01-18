@@ -2,7 +2,7 @@
 title: Environment variables in Compose
 description: How to set, use and manage environment variables in Compose
 keywords: compose, orchestration, environment, env file
-aliases:
+redirect_from:
 - /compose/env/
 - /compose/link-env-deprecated/
 ---

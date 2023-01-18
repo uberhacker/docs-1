@@ -2,7 +2,7 @@
   {{ if or (eq .CurrentSection site.Home) (eq .Section "topics") }}
     {{ partial "sidebar-home.html" . }}
   {{ else }}
-    <div>
+    <div class="pb-2">
       <a
         class="px-2 flex items-center gap-1 sidebar-hover"
         href="{{ site.Home.Permalink }}"
@@ -10,9 +10,9 @@
         <span class="text-lg material-symbols-rounded">arrow_back</span>
         <span>All sections</span></a
       >
-      {{ if (or .IsPage .IsSection) }}
-        {{ partial "sidebar-sections.html" . }}
-      {{ end }}
     </div>
+      {{ if (or .IsPage .IsSection) }}
+        {{ partial "sidebar-legacy.html" . }}
+      {{ end }}
   {{ end }}
 </nav>

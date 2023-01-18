@@ -1,7 +1,7 @@
 ---
 description: Explains how to use storage drivers
 keywords: registry, on-prem, images, tags, repository, distribution, storage drivers, advanced
-aliases:
+redirect_from:
 - /registry/storagedrivers/
 title: Docker Registry storage driver
 ---

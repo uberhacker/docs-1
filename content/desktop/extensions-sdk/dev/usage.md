@@ -2,7 +2,7 @@
 title: Usage overview
 description: Docker extension CLI
 keywords: Docker, extensions, sdk, CLI
-aliases:
+redirect_from:
 - /desktop/extensions-sdk/dev/cli/usage/
 ---
 

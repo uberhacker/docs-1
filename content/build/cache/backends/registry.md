@@ -1,7 +1,7 @@
 ---
 title: "Registry cache"
 keywords: build, buildx, cache, backend, registry
-aliases:
+redirect_from:
   - /build/building/cache/backends/registry/
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Packaging your software
 keywords: build, buildx, buildkit, getting started, dockerfile
-aliases:
+redirect_from:
 - /build/hellobuild/
 ---
 

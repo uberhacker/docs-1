@@ -2,7 +2,7 @@
 title: Validate your extension
 description: Step three in the extension creation process
 keywords: Docker, Extensions, sdk, validate, install
-aliases:
+redirect_from:
 - /desktop/extensions-sdk/extensions/validation/
 - /desktop/extensions-sdk/build/build-install/
 - /desktop/extensions-sdk/dev/cli/build-test-install-extension/

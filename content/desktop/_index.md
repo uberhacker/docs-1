@@ -2,7 +2,7 @@
 description: Docker Desktop overview
 keywords: Docker Desktop, Docker, features, GUI, linux, mac, windows
 title: Docker Desktop
-aliases:
+redirect_from:
 - /desktop/opensource/
 - /docker-for-mac/dashboard/
 - /docker-for-mac/opensource/

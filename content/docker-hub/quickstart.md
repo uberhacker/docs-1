@@ -2,7 +2,7 @@
 description: Docker Hub Quickstart
 keywords: Docker, docker, registry, accounts, plans, Dockerfile, Docker Hub, accounts, organizations, repositories, groups, teams
 title: Docker Hub Quickstart
-aliases:
+redirect_from:
 - /apidocs/docker-cloud/
 - /docker-cloud/
 - /docker-cloud/migration/

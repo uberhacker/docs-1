@@ -2,7 +2,7 @@
 title: UI styling overview
 description: Docker extension design
 keywords: Docker, extensions, design
-aliases:
+redirect_from:
 - /desktop/extensions-sdk/design/design-overview/
 - /desktop/extensions-sdk/design/overview/
 ---

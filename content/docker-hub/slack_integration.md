@@ -1,7 +1,7 @@
 ---
 description: Integrate Docker Hub with Slack
 keywords: Slack, integrate, notifications
-aliases:
+redirect_from:
 - /docker-cloud/tutorials/slack-integration/
 - /docker-cloud/slack-integration/
 title: Set up Docker Hub notifications in Slack

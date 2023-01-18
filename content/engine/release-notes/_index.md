@@ -5,7 +5,7 @@ keywords: docker, docker engine, ce, whats new, release notes
 toc_min: 1
 toc_max: 2
 skip_read_time: true
-aliases:
+redirect_from:
   - /release-notes/docker-ce/
   - /release-notes/docker-engine/
 ---

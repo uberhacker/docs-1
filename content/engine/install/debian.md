@@ -2,7 +2,7 @@
 description: Instructions for installing Docker Engine on Debian
 keywords:
   requirements, apt, installation, debian, install, uninstall, upgrade, update
-aliases:
+redirect_from:
   - /engine/installation/debian/
   - /engine/installation/linux/raspbian/
   - /engine/installation/linux/debian/

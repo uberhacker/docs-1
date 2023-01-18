@@ -1,7 +1,7 @@
 ---
 description: Most frequently asked questions.
 keywords: faq, questions, documentation,  docker
-aliases:
+redirect_from:
 - /engine/misc/faq/
 title: Docker frequently asked questions (FAQ)
 ---

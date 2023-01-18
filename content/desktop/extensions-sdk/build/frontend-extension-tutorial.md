@@ -2,7 +2,7 @@
 title: Set up an advanced frontend extension
 description: Advanced frontend extension tutorial
 keywords: Docker, extensions, sdk, build
-aliases:
+redirect_from:
   - /desktop/extensions-sdk/tutorials/react-extension/
   - /desktop/extensions-sdk/build/set-up/react-extension/
   - /desktop/extensions-sdk/build/set-up/minimal-frontend-using-docker-cli/

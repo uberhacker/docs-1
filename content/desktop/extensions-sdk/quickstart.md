@@ -2,7 +2,7 @@
 title: Quickstart
 description: Guide on how to build an extension quickly
 keywords: quickstart, extensions
-aliases:
+redirect_from:
   - desktop/extensions-sdk/tutorials/initialize/
 ---
 

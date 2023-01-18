@@ -2,7 +2,7 @@
 description: How to install Docker Desktop for Windows
 keywords: windows, install, download, run, docker, local, Docker Desktop
 title: Install on Windows
-aliases:
+redirect_from:
 - /desktop/windows/install/
 - /docker-ee-for-windows/install/
 - /docker-for-windows/install-windows-home/

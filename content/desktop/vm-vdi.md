@@ -2,7 +2,7 @@
 description: Instructions on how to enable nested virtualization
 keywords: nested virtualization, Docker Desktop, windows, VM, VDI environment
 title: Run Docker Desktop for Windows in a VM or VDI environment
-aliases:
+redirect_from:
 - /desktop/nested-virtualization/
 ---
 

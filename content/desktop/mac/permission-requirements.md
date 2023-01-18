@@ -2,7 +2,7 @@
 description: Permission requirements for Docker Desktop for Mac
 keywords: Docker Desktop, mac, security, install, permissions
 title: Understand permission requirements for Mac
-aliases:
+redirect_from:
 - /docker-for-mac/privileged-helper/
 - /desktop/mac/privileged-helper/
 ---

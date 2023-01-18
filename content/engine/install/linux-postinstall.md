@@ -4,7 +4,7 @@ keywords: >
   Docker, Docker documentation, requirements, apt, installation, ubuntu,
   install, uninstall, upgrade, update
 title: Docker Engine post-installation steps
-aliases:
+redirect_from:
   - /engine/installation/linux/docker-ee/linux-postinstall/
   - /engine/installation/linux/linux-postinstall/
   - /install/linux/linux-postinstall/

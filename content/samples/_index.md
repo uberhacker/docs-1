@@ -1,7 +1,7 @@
 ---
 title: Samples overview
 description: Learn how to containerize different types of services by walking through Official Docker samples.
-aliases:
+redirect_from:
 - /en/latest/examples/
 - /engine/examples/
 - /examples/

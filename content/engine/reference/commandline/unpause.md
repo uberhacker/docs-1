@@ -1,4 +1,5 @@
 ---
+layout: cli
 datafolder: engine-cli
 datafile: docker_unpause
 title: docker unpause
@@ -13,4 +14,3 @@ in the source repository on GitHub:
 https://github.com/docker/cli
 -->
 
-{% include cli.md datafolder=page.datafolder datafile=page.datafile %}

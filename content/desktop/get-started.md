@@ -2,7 +2,7 @@
 description: Docker Dashboard
 keywords: Docker Dashboard, manage, containers, gui, dashboard, images, user manual, quick start, guide, sign in
 title: Quick Start Guide and sign in
-aliases:
+redirect_from:
 - /desktop/linux/
 - /desktop/linux/index/
 - /desktop/mac/

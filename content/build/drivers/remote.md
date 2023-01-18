@@ -1,7 +1,7 @@
 ---
 title: "Remote driver"
 keywords: build, buildx, driver, builder, remote
-aliases:
+redirect_from:
   - /build/buildx/drivers/remote/
   - /build/building/drivers/remote/
 ---

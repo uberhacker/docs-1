@@ -2,7 +2,7 @@
 description: Enabling content trust in Docker
 keywords: content, trust, security, docker, documentation
 title: Content trust in Docker
-aliases:
+redirect_from:
 - /engine/security/trust/content_trust/
 - /notary/getting_started/
 - /notary/advanced_usage/

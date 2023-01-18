@@ -2,7 +2,7 @@
 title: Examples using the Docker Engine SDKs and Docker API
 description: Examples on how to perform a given Docker operation using the Go and Python SDKs and the HTTP API using curl.
 keywords: developing, api, sdk, developers, rest, curl, python, go
-aliases:
+redirect_from:
 - /engine/api/getting-started/
 - /engine/api/client-libraries/
 - /engine/reference/api/remote_api_client_libraries/

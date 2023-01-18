@@ -2,7 +2,7 @@
 title: Interacting with Kubernetes from a Docker Extension
 description: How to connect to a Kubernetes cluster from a Docker Extension
 keywords: Docker, Extensions, sdk, Kubernetes
-aliases:
+redirect_from:
   - /desktop/extensions-sdk/dev/kubernetes/
 ---
 

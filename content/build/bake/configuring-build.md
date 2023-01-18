@@ -1,7 +1,7 @@
 ---
 title: "Configuring builds"
 keywords: build, buildx, bake, buildkit, hcl, json
-aliases:
+redirect_from:
 - /build/customize/bake/configuring-build/
 ---
 

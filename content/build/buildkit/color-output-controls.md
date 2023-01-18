@@ -2,7 +2,7 @@
 title: Color output controls
 description: Learn how to control the color of BuildKit progress output.
 keywords: build, buildx buildkit, color, terminal
-aliases:
+redirect_from:
   - /build/customize/color-output-controls/
 ---
 

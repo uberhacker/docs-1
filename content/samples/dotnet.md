@@ -2,7 +2,7 @@
 title: .NET samples
 description: Docker samples for .NET.
 service: .net
-aliases:
+redirect_from:
   - /samples/dotnetcore/
   - /compose/aspnet-mssql-compose/
   - /samples/aspnet-mssql-compose/

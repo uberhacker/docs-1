@@ -3,7 +3,7 @@ description: How to install Docker Compose on Linux
 keywords: compose, orchestration, install, installation, docker, documentation
 toc_max: 3
 title: Install the Compose plugin
-aliases:
+redirect_from:
 - /compose/compose-plugin/
 - /compose/compose-linux/
 ---

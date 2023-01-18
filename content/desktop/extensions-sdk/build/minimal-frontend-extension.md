@@ -2,7 +2,7 @@
 title: Set up a minimal frontend extension
 description: Minimal frontend extension tutorial
 keywords: Docker, extensions, sdk, build
-aliases:
+redirect_from:
   - /desktop/extensions-sdk/tutorials/minimal-frontend-extension/
   - /desktop/extensions-sdk/build/set-up/minimal-frontend-extension/
 ---

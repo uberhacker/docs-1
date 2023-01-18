@@ -1,7 +1,7 @@
 ---
 description: Compose file reference
 keywords: fig, composition, compose, docker
-aliases:
+redirect_from:
 - /compose/yaml/
 - /compose/compose-file/compose-file-v1/
 title: Compose specification

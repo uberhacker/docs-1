@@ -2,7 +2,7 @@
 title: Overview of Docker Build
 description: Introduction and overview of Docker Build
 keywords: build, buildx, buildkit
-aliases:
+redirect_from:
   - /build/buildx/
   - /buildx/working-with-buildx/
   - /develop/develop-images/build_enhancements/

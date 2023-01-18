@@ -2,7 +2,7 @@
 title: "Image and registry exporters"
 keywords: >
   build, buildx, buildkit, exporter, image, registry
-aliases:
+redirect_from:
   - /build/building/exporters/image-registry/
 ---
 

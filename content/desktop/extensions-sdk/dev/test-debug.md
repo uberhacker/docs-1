@@ -2,7 +2,7 @@
 title: "Test and debug"
 description: Test and debug your extension.
 keywords: Docker, Extensions, sdk, preview, update, Chrome DevTools
-aliases:
+redirect_from:
 - /desktop/extensions-sdk/build/test-debug/
 ---
 

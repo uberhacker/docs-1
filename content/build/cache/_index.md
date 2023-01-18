@@ -4,7 +4,7 @@ description: Improve your build speeds by taking advantage of the builtin cache
 keywords: >
   build, buildx, buildkit, dockerfile, image layers, build instructions, build
   context
-aliases:
+redirect_from:
   - /build/building/cache/
 ---
 

@@ -2,7 +2,7 @@
 description: Restricting access to your registry using a nginx proxy
 keywords: registry, on-prem, images, tags, repository, distribution, nginx, proxy, authentication, TLS, recipe, advanced
 title: Authenticate proxy with nginx
-aliases:
+redirect_from:
 - /registry/nginx/
 ---
 

@@ -2,7 +2,7 @@
 description: Instructions for installing Docker Engine on Ubuntu
 keywords:
   requirements, apt, installation, ubuntu, install, uninstall, upgrade, update
-aliases:
+redirect_from:
   - /ee/docker-ee/ubuntu/
   - /engine/installation/linux/docker-ce/ubuntu/
   - /engine/installation/linux/docker-ee/ubuntu/

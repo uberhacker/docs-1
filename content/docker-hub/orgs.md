@@ -2,7 +2,7 @@
 description: Docker Hub Teams & Organizations
 keywords: Docker, docker, registry, teams, organizations, plans, Dockerfile, Docker Hub, docs, documentation
 title: Teams and Organizations
-aliases:
+redirect_from:
 - /docker-cloud/orgs/
 ---
 

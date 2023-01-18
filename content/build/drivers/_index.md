@@ -1,7 +1,7 @@
 ---
 title: "Drivers overview"
 keywords: build, buildx, driver, builder, docker-container, kubernetes, remote
-aliases:
+redirect_from:
   - /build/buildx/drivers/
   - /build/building/drivers/
   - /build/buildx/multiple-builders/

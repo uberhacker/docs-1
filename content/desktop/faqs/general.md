@@ -1,7 +1,7 @@
 ---
 description: General Frequently asked questions
 keywords: desktop, mac, windows, faqs
-aliases:
+redirect_from:
 - /mackit/faqs/
 - /docker-for-mac/faqs/
 - /docker-for-windows/faqs/

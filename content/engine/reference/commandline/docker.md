@@ -1,4 +1,5 @@
 ---
+layout: cli
 datafolder: engine-cli
 datafile: docker
 title: docker
@@ -22,4 +23,3 @@ in the source repository on GitHub:
 https://github.com/docker/cli
 -->
 
-{% include cli.md datafolder=page.datafolder datafile=page.datafile %}

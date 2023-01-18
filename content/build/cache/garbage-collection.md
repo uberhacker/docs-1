@@ -1,7 +1,7 @@
 ---
 title: Garbage collection
 keywords: build, buildx, buildkit, garbage collection, prune
-aliases:
+redirect_from:
   - /build/building/cache/garbage-collection/
 ---
 

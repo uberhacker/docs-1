@@ -2,7 +2,7 @@
 title: Develop with Docker Engine API
 description: Using Docker APIs to automate Docker tasks in your language of choice
 keywords: developing, api
-aliases:
+redirect_from:
 - /engine/reference/api/
 - /engine/reference/api/docker_remote_api/
 - /reference/api/

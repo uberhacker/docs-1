@@ -2,7 +2,7 @@
 description: Setting-up a local mirror for Docker Hub images
 keywords: registry, on-prem, images, tags, repository, distribution, mirror, Hub, recipe, advanced
 title: Registry as a pull through cache
-aliases:
+redirect_from:
 - /engine/admin/registry_mirror/
 ---
 

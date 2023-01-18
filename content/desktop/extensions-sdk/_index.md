@@ -2,7 +2,7 @@
 title: Overview
 description: Overall index for Docker Extensions SDK documentation
 keywords: Docker, Extensions, sdk
-aliases:
+redirect_from:
   - /desktop/extensions-sdk/dev/overview/
 ---
 

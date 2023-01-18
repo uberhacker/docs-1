@@ -2,7 +2,7 @@
 description: Deploying to Kubernetes on Docker Desktop
 keywords: deploy, kubernetes, kubectl, orchestration, Docker Desktop
 title: Deploy on Kubernetes
-aliases:
+redirect_from:
 - /docker-for-windows/kubernetes/
 - /docker-for-mac/kubernetes/
 ---

@@ -2,7 +2,7 @@
 description: Docker Dashboard
 keywords: Docker Dashboard, manage, containers, gui, dashboard, images, user manual, whale menu
 title: Overview
-aliases:
+redirect_from:
 - /desktop/dashboard/
 ---
 

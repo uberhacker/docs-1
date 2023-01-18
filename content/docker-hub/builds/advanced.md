@@ -2,7 +2,7 @@
 description: Automated builds
 keywords: automated, build, images
 title: Advanced options for Autobuild and Autotest
-aliases:
+redirect_from:
 - /docker-cloud/builds/advanced/
 ---
 

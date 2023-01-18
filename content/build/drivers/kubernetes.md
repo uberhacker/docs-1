@@ -1,7 +1,7 @@
 ---
 title: "Kubernetes driver"
 keywords: build, buildx, driver, builder, kubernetes
-aliases:
+redirect_from:
   - /build/buildx/drivers/kubernetes/
   - /build/building/drivers/kubernetes/
 ---

@@ -2,7 +2,7 @@
 title: Install Docker Buildx
 description: How to install Docker Buildx
 keywords: build, buildx, buildkit
-aliases:
+redirect_from:
   - /build/buildx/install/
 ---
 

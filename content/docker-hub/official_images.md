@@ -2,7 +2,7 @@
 description: Guidelines for Official Images on Docker Hub
 keywords: Docker, docker, registry, accounts, plans, Dockerfile, Docker Hub, docs, official,image, documentation
 title: Docker Official Images
-aliases:
+redirect_from:
 - /docker-hub/official_repos/
 ---
 

@@ -3,7 +3,7 @@ description: Release notes for Docker Desktop for Mac, Linux, Windows
 keywords: Docker desktop, release notes, linux, mac, windows
 title: Docker Desktop release notes
 toc_max: 2
-aliases:
+redirect_from:
   - /docker-for-mac/release-notes/
   - /docker-for-mac/edge-release-notes/
   - /desktop/mac/release-notes/

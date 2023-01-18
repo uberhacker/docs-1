@@ -1,7 +1,7 @@
 ---
 title: "GitHub Actions cache"
 keywords: build, buildx, cache, backend, gha, github, actions
-aliases:
+redirect_from:
   - /build/building/cache/backends/gha/
 ---
 

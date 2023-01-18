@@ -1,7 +1,7 @@
 ---
 description: How to network Docker containers.
 keywords: Examples, Usage, volume, docker, documentation, user guide, data, volumes
-aliases:
+redirect_from:
 - /engine/userguide/containers/networkigncontainers/
 - /engine/userguide/networkigncontainers/
 title: Network containers

@@ -2,7 +2,7 @@
 title: Create a base image
 description: How to create base images
 keywords: images, base image, examples
-aliases:
+redirect_from:
 - /articles/baseimages/
 - /engine/articles/baseimages/
 - /engine/userguide/eng-image/baseimages/

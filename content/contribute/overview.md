@@ -1,7 +1,7 @@
 ---
 title: Contribute to Docker's docs
 toc_max: 1
-aliases:
+redirect_from:
 - /CONTRIBUTING/
 - /opensource/
 ---

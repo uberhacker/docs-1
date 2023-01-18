@@ -3,7 +3,7 @@ title: "Exporters overview"
 keywords: >
   build, buildx, buildkit, exporter, image, registry, local, tar, oci, docker,
   cacheonly
-aliases:
+redirect_from:
   - /build/building/exporters/
 ---
 

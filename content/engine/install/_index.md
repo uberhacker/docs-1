@@ -2,7 +2,7 @@
 title: Docker Engine installation overview
 description: Lists the installation methods
 keywords: docker, installation, install, Docker Engine, Docker Engine, docker editions, stable, edge
-aliases:
+redirect_from:
 - /cs-engine/
 - /cs-engine/1.12/
 - /cs-engine/1.12/upgrade/

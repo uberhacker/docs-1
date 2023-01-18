@@ -1,7 +1,7 @@
 ---
 title: "Bake file definition"
 keywords: build, buildx, bake, buildkit, hcl, json, compose
-aliases:
+redirect_from:
   - /build/customize/bake/file-definition/
 ---
 

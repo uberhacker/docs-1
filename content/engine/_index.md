@@ -1,7 +1,7 @@
 ---
 description: Engine
 keywords: Engine
-aliases:
+redirect_from:
   - /edge/
   - /engine/ce-ee-node-activate/
   - /engine/misc/

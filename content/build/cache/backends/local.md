@@ -1,7 +1,7 @@
 ---
 title: "Local cache"
 keywords: build, buildx, cache, backend, local
-aliases:
+redirect_from:
   - /build/building/cache/backends/local/
 ---
 

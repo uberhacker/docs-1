@@ -2,7 +2,7 @@
 description: Frequently asked questions
 keywords: desktop, mac, faqs
 title: Frequently asked questions for Mac
-aliases:
+redirect_from:
 - /desktop/mac/space/
 - /docker-for-mac/space/
 ---

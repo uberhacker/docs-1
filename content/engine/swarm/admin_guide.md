@@ -1,7 +1,7 @@
 ---
 description: Manager administration guide
 keywords: docker, container, swarm, manager, raft
-aliases:
+redirect_from:
 - /engine/swarm/manager-administration-guide/
 title: Administer and maintain a swarm of Docker Engines
 ---

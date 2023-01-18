@@ -2,7 +2,7 @@
 title: Add a backend to your extension
 description: Learn how to add a backend to your extension.
 keywords: Docker, extensions, sdk, build
-aliases:
+redirect_from:
   - /desktop/extensions-sdk/tutorials/minimal-backend-extension/
   - /desktop/extensions-sdk/build/minimal-backend-extension/
   - /desktop/extensions-sdk/build/set-up/backend-extension-tutorial/

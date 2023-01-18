@@ -2,7 +2,7 @@
 title: Develop with Docker Engine SDKs
 description: Using Docker SDKs to automate Docker tasks in your language of choice
 keywords: developing, sdk
-aliases:
+redirect_from:
 - /engine/api/sdks/
 - /develop/sdk/
 ---
