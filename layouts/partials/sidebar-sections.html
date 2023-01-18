@@ -27,13 +27,6 @@
     {{ end }}
   >
     <span class="flex items-center">
-      {{ if .item.Pages }}
-        <button
-          class="sidebar-expander material-symbols-rounded -my-1 -ml-[3px] md:text-[28px]"
-        >
-          {{- cond $isExpanded "expand_more" "chevron_right" -}}
-        </button>
-      {{ end }}
       <a
         {{ if $isCurrent }}
           class="py-2 max-w-full w-full truncate font-medium"
@@ -45,17 +38,18 @@
         title="{{ $title }}"
         >{{ $title }}</a
       >
+      {{ if .item.Pages }}
+        <button
+          class="sidebar-expander material-symbols-rounded -my-1 md:text-[28px]"
+        >
+          {{- cond $isExpanded "expand_more" "chevron_right" -}}
+        </button>
+      {{ end }}
     </span>
   </li>
   {{ with .item.Pages }}
     <ul
-      {{ if not $isExpanded }}
-        class="hidden ml-5 border-l-2 border-gray-light-300 md:ml-[21px]
-        dark:border-gray-dark-400"
-      {{ else }}
-        class="ml-5 border-l-2 border-gray-light-300 dark:border-gray-dark-400
-        md:ml-[21px]"
-      {{ end }}
+        class="{{ if not $isExpanded }}hidden {{end}}ml-5 md:ml-[21px]"
     >
       {{ range . }}
         {{ template "nodeWalk" (dict "item" . "ctx" $ctx) }}

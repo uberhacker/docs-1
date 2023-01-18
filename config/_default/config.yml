@@ -11,6 +11,8 @@ params:
     google: GTM-WL2QLG5
     onetrust: 8e0ebfd9-035d-4ec2-9b2f-a2de9c09f906
     hotjar: 3169877
+  algolia_appid: 3XRLW0LZH9
+  algolia_apikey: 2899036ce47dba191b8dc1758e4bc6a4
   versions:
     latest_engine_api_version: "1.41"
     docker_ce_version: "20.10"
@@ -85,11 +87,6 @@ module:
 
 
 outputFormats:
-  algolia:
-    baseName: algolia
-    isPlainText: true
-    mediaType: "application/json"
-    notAlternative: true
   redirects:
     baseName: redirects
     isPlainText: true
@@ -99,7 +96,6 @@ outputFormats:
 outputs:
   home:
     - html
-    - algolia
     - redirects
   term:
     - html

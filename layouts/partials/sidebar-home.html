@@ -2,8 +2,7 @@
   {{ with (site.GetPage "/guides") }}
     <a class="p-2 sidebar-hover" href="{{ .Permalink }}">{{ .LinkTitle }}</a>
   {{ end }}
-  <hr />
-  <div class="pt-2 pl-2 text-gray-light-400 dark:text-gray-dark-400">
+  <div class="pt-2 pl-2 text-base">
     Manuals
   </div>
   <div class="flex flex-col">
@@ -16,22 +15,18 @@
       {{ end }}
     {{ end }}
   </div>
-  <hr />
   {{ with (site.GetPage "/reference") }}
     <a class="p-2 sidebar-hover" href="{{ .Permalink }}">{{ .LinkTitle }}</a>
   {{ end }}
-  <hr />
   {{ with (site.GetPage "/admin") }}
     <a class="p-2 sidebar-hover" href="{{ .Permalink }}">{{ .LinkTitle }}</a>
   {{ end }}
-  <hr />
   {{ with (site.GetPage "/samples") }}
     <a class="p-2 sidebar-hover" href="{{ .Permalink }}">{{ .LinkTitle }}</a>
   {{ end }}
-  <hr />
   {{ range site.Home.RegularPages }}
     <a
-      class="p-2 sidebar-hover text-gray-light-600 dark:text-gray-dark-600 text-base
+      class="p-2 sidebar-hover
     {{ if eq $ . }}
         border-l-4 border-blue-light dark:border-blue-dark sidebar-hover
         bg-blue-light-200 dark:bg-blue-dark-100 text-black dark:text-white
@@ -39,5 +34,22 @@
       href="{{ .Permalink }}"
       >{{ .LinkTitle }}</a
     >
+  {{ end }}
+  {{ with (site.GetPage "/topics") }}
+    <hr class="my-2" />
+    <div
+      class="flex items-center gap-1
+      {{ if eq $ . }}
+        border-l-4 border-blue-light dark:border-blue-dark sidebar-hover
+        bg-blue-light-200 dark:bg-blue-dark-100 pl-2
+      {{ end }}"
+    >
+      <span class="text-lg material-symbols-rounded">tag</span>
+      <a
+        class="hover:underline hover:text-black hover:dark:text-white"
+        href="{{ .Permalink }}"
+        >{{ .LinkTitle }}</a
+      >
+    </div>
   {{ end }}
 </nav>

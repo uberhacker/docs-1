@@ -15,21 +15,4 @@
       {{ end }}
     </div>
   {{ end }}
-  {{ with (site.GetPage "/topics") }}
-    <hr class="my-2" />
-    <div
-      class="text-gray-light-600 dark:text-gray-dark-600 flex items-center gap-1
-      {{ if eq $ . }}
-        border-l-4 border-blue-light dark:border-blue-dark sidebar-hover
-        bg-blue-light-200 dark:bg-blue-dark-100 pl-2
-      {{ end }}"
-    >
-      <span class="text-lg material-symbols-rounded">tag</span>
-      <a
-        class="hover:underline hover:text-black hover:dark:text-white"
-        href="{{ .Permalink }}"
-        >{{ .LinkTitle }}</a
-      >
-    </div>
-  {{ end }}
 </nav>
