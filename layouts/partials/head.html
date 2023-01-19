@@ -1,11 +1,6 @@
-{{ if and (not .IsHome) (.LinkTitle) }}
-  <title>{{ printf "%s | %s" .LinkTitle site.Title }}</title>
-{{ else }}
-  <title>{{ site.Title }}</title>
-{{ end }}
-{{ if or (eq .Params.sitemap false) (not hugo.IsProduction) }}
-  <meta name="robots" content="noindex" />
-{{ end }}
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+{{ partial "meta.html" . }}
 {{ if hugo.IsProduction }}
   <script
     src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
