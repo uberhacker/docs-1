@@ -1,31 +1,9 @@
+{{ $scratch := partialCached "utils/tocparser.html" . . }}
 {{ $ctx := . }}
-{{ $scratch := newScratch }}
-{{ $toc := site.Data.toc }}
-{{ range $root, $nodes := $toc }}
-  {{ template "tocWalk" (dict "scratch" $scratch "root" $root "nodes" $nodes "ctx" $ctx) }}
-{{ end }}
-
-{{ define "tocWalk" }}
-  {{ $ctx := .ctx }}
-  {{ $root := .root }}
-  {{ $scratch := .scratch }}
-  {{ range .nodes }}
-    {{ if .path }}
-      {{ $match := eq (urls.Parse .path).Path (urls.Parse $ctx.Permalink).Path }}
-      {{ if $match }}
-        {{ $scratch.Set "currentSection" $root }}
-      {{ end }}
-    {{ else }}
-      {{ if eq ($scratch.Get "currentSection") nil }}
-        {{ template "tocWalk" (dict "scratch" $scratch "root" $root "nodes" .section "ctx" $ctx) }}
-      {{ end }}
-    {{ end }}
-  {{ end }}
-{{ end }}
 
 
 <ul>
-  {{ with ($scratch.Get "currentSection") }}
+  {{ with (index ($scratch.Get "sections") "1") }}
     {{ range (index site.Data.toc .) }}
       {{ template "tocRender" (dict "ctx" $ctx "entry" .) }}
     {{ end }}
@@ -44,13 +22,11 @@
         @click="expanded = ! expanded"
         class="sidebar-hover w-full flex items-center justify-between"
       >
-        <span class="pl-3 py-2 truncate"
-          >{{ .entry.sectiontitle }}</span
-        >
+        <span class="pl-3 py-2 truncate">{{ .entry.sectiontitle }}</span>
         <span
           class="material-symbols-rounded -my-1 md:text-[28px]"
           x-text="expanded ? 'expand_more' : 'chevron_right'"
-          >
+        >
         </span>
       </button>
       <ul x-show="expanded" class="ml-3 md:ml-[21px]">

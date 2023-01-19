@@ -6,7 +6,7 @@
   {{ $data := index site.Data.cli .Params.datafile }}
   {{ .Scratch.Set "headings" slice }}
   {{ .Scratch.Set "subheadings" slice }}
-  {{ partial "breadcrumbs.html" . }}
+  {{ partial "breadcrumbs-legacy.html" . }}
   <article class="prose max-w-none dark:prose-invert">
     <h1>{{ partial "utils/title.html" . }}</h1>
     {{ $data.short | .RenderString (dict "display" "block") }}
