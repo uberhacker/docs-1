@@ -1,19 +1,26 @@
 # syntax=docker/dockerfile:1
 
-FROM golang:1.19.3-alpine as base
+FROM alpine:3.17.1 as base
 WORKDIR /src
-RUN apk add --update nodejs npm git
+RUN apk add --update nodejs npm git gcompat
 
 FROM base as node
 COPY package*.json .
 RUN npm install
 
 FROM base as hugo
-RUN go install github.com/gohugoio/hugo@v0.109.0
+WORKDIR /bin
+ARG TARGETARCH
+RUN wget https://github.com/gohugoio/hugo/releases/download/v0.110.0/hugo_extended_0.110.0_linux-${TARGETARCH}.tar.gz \
+    && tar -xf hugo_extended_0.110.0_linux-${TARGETARCH}.tar.gz hugo
+
+FROM base as server
+COPY --from=hugo /bin/hugo /usr/local/bin/hugo
+COPY --from=node /src/node_modules /src/node_modules
 
 FROM base as build
 ARG HUGO_ENV
-COPY --from=hugo /go/bin/hugo /usr/local/bin/hugo
+COPY --from=hugo /bin/hugo /usr/local/bin/hugo
 COPY --from=node /src/node_modules /src/node_modules
 COPY . .
 RUN hugo --gc --minify -d /out -e "$HUGO_ENV"
