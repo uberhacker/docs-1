@@ -1,5 +1,5 @@
 <nav id="sectiontree" class="w-[300px] flex flex-col md:text-lg md:w-full">
-  {{ if or (eq .CurrentSection site.Home) (eq .Section "topics") }}
+  {{ if or .IsHome (eq .Section "topics") }}
     {{ partial "sidebar-home.html" . }}
   {{ else }}
     <div class="pb-2">

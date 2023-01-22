@@ -1,1 +1,28 @@
-<img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}"{{ end }} class="{{ .Attributes.class }}" />
+<div x-data="{ zoom: false }" @click="zoom = ! zoom">
+  <img
+    src="{{ .Destination | safeURL }}"
+    alt="{{ .Text }}"
+    {{ with .Title }}title="{{ . }}"{{ end }}
+    class="{{ .Attributes.class }}"
+  />
+  <template x-teleport="body">
+    <div
+      x-show="zoom"
+      @click="zoom = false"
+      x-transition.opacity.duration.250ms
+      class="fixed z-20 inset-0 flex items-center justify-center bg-black/70"
+    >
+      <button
+        class="material-symbols-rounded fixed z-30 top-6 right-8 text-white text-5xl"
+      >
+        close
+      </button>
+      <img
+        class="rounded"
+        src="{{ .Destination | safeURL }}"
+        alt="{{ .Text }}"
+        {{ with .Title }}title="{{ . }}"{{ end }}
+      />
+    </div>
+  </template>
+</div>

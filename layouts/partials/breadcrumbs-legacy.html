@@ -2,7 +2,7 @@
 {{ $ctx := . }}
 
 
-<nav class="p-5 space-x-2 text-sm flex items-center">
+<nav class="p-5 space-x-2 text-sm flex items-center overflow-hidden">
   <a class="link" href="{{ site.BaseURL }}"
     ><span class="material-symbols-rounded">home</span></a
   >
@@ -11,8 +11,8 @@
     {{- if $i -}}
       <span>/</span>
     {{- end -}}
-    <span>{{ . }}</span>
+    <span class="whitespace-nowrap">{{ . }}</span>
   {{- end -}}
   <span>/</span>
-  <span>{{ partial "utils/title.html" . }}</span>
+  <span class="whitespace-nowrap">{{ partial "utils/title.html" . }}</span>
 </nav>

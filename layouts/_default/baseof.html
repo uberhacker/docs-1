@@ -9,7 +9,7 @@
     <header
       class="sticky top-0 z-10 h-16 px-4 bg-blue-light-500 dark:bg-blue-dark-200 text-white"
     >
-      {{ partial "header.html" . }}
+      {{ partialCached "header.html" . }}
     </header>
     <main class="min-h-screen flex items-stretch">
       <div
@@ -20,7 +20,7 @@
         {{ end }}
       </div>
       <div
-        class="w-[840px] flex flex-col lg:w-full lg:flex-grow px-8 pb-16 sm:px-2 dark:bg-background-dark"
+        class="w-[840px] flex flex-col lg:w-full lg:flex-grow px-8 pb-16 sm:px-2 dark:bg-background-dark overflow-hidden"
       >
         {{ block "main" . }}
         {{ end }}
@@ -33,7 +33,7 @@
       </div>
     </main>
     <footer>
-      {{ partial "footer.html" . }}
+      {{ partialCached "footer.html" . }}
     </footer>
   </body>
 </html>

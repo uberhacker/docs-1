@@ -70,7 +70,7 @@
         Copyright &copy; 2013-{{ now.Format "2006" }} Docker Inc. All rights
         reserved.
       </p>
-      {{ if hugo.IsProduction }}
+      {{ with site.Params.analytics.onetrust }}
         <button id="ot-sdk-btn" class="ot-sdk-show-settings">
           Cookie Settings
         </button>
@@ -79,22 +79,46 @@
     <nav>
       <ul class="flex gap-4">
         <li class="hover:underline">
-          <a href="https://twitter.com/docker">Twitter</a>
+          <a href="https://twitter.com/docker" target="_blank" rel="noopener"
+            >Twitter</a
+          >
         </li>
         <li class="hover:underline">
-          <a href="https://www.youtube.com/user/dockerrun">Youtube</a>
+          <a
+            href="https://www.youtube.com/user/dockerrun"
+            target="_blank"
+            rel="noopener"
+            >Youtube</a
+          >
         </li>
         <li class="hover:underline">
-          <a href="https://github.com/docker">GitHub</a>
+          <a href="https://github.com/docker" target="_blank" rel="noopener"
+            >GitHub</a
+          >
         </li>
         <li class="hover:underline">
-          <a href="https://www.linkedin.com/company/docker">Linkedin</a>
+          <a
+            href="https://www.linkedin.com/company/docker"
+            target="_blank"
+            rel="noopener"
+            >Linkedin</a
+          >
         </li>
         <li class="hover:underline">
-          <a href="https://www.facebook.com/docker.run">Facebook</a>
+          <a
+            href="https://www.facebook.com/docker.run"
+            target="_blank"
+            rel="noopener"
+            >Facebook</a
+          >
         </li>
         <li class="hover:underline">
-          <a href="https://www.reddit.com/r/docker">Reddit</a>
+          <a
+            href="https://www.reddit.com/r/docker"
+            target="_blank"
+            rel="noopener"
+            >Reddit</a
+          >
         </li>
       </ul>
     </nav>

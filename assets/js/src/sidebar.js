@@ -14,3 +14,5 @@ function scrollMenuItem() {
     }
   }
 }
+
+scrollMenuItem()
