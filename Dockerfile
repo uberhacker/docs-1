@@ -14,16 +14,22 @@ ARG TARGETARCH
 RUN wget https://github.com/gohugoio/hugo/releases/download/v0.110.0/hugo_extended_0.110.0_linux-${TARGETARCH}.tar.gz \
     && tar -xf hugo_extended_0.110.0_linux-${TARGETARCH}.tar.gz hugo
 
-FROM base as server
+FROM base as build-base
 COPY --from=hugo /bin/hugo /usr/local/bin/hugo
 COPY --from=node /src/node_modules /src/node_modules
 
-FROM base as build
+FROM build-base as build
 ARG HUGO_ENV
-COPY --from=hugo /bin/hugo /usr/local/bin/hugo
-COPY --from=node /src/node_modules /src/node_modules
 COPY . .
 RUN hugo --gc --minify -d /out -e "$HUGO_ENV"
 
 FROM scratch as release
 COPY --from=build /out /
+
+FROM davidanson/markdownlint-cli2:v0.6.0 as lint
+RUN --mount=type=bind,target=. \
+    /usr/local/bin/markdownlint-cli2 content/**/*.md
+
+FROM wjdp/htmltest as test
+COPY --from=build /out /test
+RUN htmltest -s /test
