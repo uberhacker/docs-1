@@ -51,7 +51,7 @@
 </script>
 {{ $js := resources.Match "js/src/**.js" | resources.Concat "scripts.js" | js.Build }}
 <script defer src="{{ $js.Permalink }}"></script>
-<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
 window.addEventListener('DOMContentLoaded', function() {
   docsearch({
